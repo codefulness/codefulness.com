@@ -12,11 +12,10 @@
 
 <title>Migrating to v4 · </title>
 
-<link rel="canonical" href="/docs/4.3/migration.html">
+<link rel="canonical" href="http://localhost:4000/docs/4.3/migration.html">
 
 <!-- Bootstrap core CSS -->
-<!-- <link href="/docs//dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous"> -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="/docs//dist/css/bootstrap.css" rel="stylesheet">
 <!-- Documentation extras -->
 
 <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
@@ -40,15 +39,15 @@
 <meta name="twitter:creator" content="@">
 <meta name="twitter:title" content="Migrating to v4">
 <meta name="twitter:description" content="Bootstrap 4 is a major rewrite of the entire project. The most notable changes are summarized below, followed by more specific changes to relevant components.">
-<meta name="twitter:image" content="">
+<meta name="twitter:image" content="http://localhost:4000">
 
 <!-- Facebook -->
-<meta property="og:url" content="/docs/4.3/migration.html">
+<meta property="og:url" content="http://localhost:4000/docs/4.3/migration.html">
 <meta property="og:title" content="Migrating to v4">
 <meta property="og:description" content="Bootstrap 4 is a major rewrite of the entire project. The most notable changes are summarized below, followed by more specific changes to relevant components.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="">
-<meta property="og:image:secure_url" content="">
+<meta property="og:image" content="http://localhost:4000">
+<meta property="og:image:secure_url" content="http://localhost:4000">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -689,7 +688,7 @@
 <ul>
   <li>Renamed <code class="highlighter-rouge">.btn-default</code> to <code class="highlighter-rouge">.btn-secondary</code>.</li>
   <li>Dropped the <code class="highlighter-rouge">.btn-xs</code> class entirely as <code class="highlighter-rouge">.btn-sm</code> is proportionally much smaller than v3’s.</li>
-  <li>The <a href="/docs/3.3/javascript/#buttons-stateful">stateful button</a> feature of the <code class="highlighter-rouge">button.js</code> jQuery plugin has been dropped. This includes the <code class="highlighter-rouge">$().button(string)</code> and <code class="highlighter-rouge">$().button('reset')</code> methods. We advise using a tiny bit of custom JavaScript instead, which will have the benefit of behaving exactly the way you want it to.
+  <li>The <a href="http://localhost:4000/docs/3.3/javascript/#buttons-stateful">stateful button</a> feature of the <code class="highlighter-rouge">button.js</code> jQuery plugin has been dropped. This includes the <code class="highlighter-rouge">$().button(string)</code> and <code class="highlighter-rouge">$().button('reset')</code> methods. We advise using a tiny bit of custom JavaScript instead, which will have the benefit of behaving exactly the way you want it to.
     <ul>
       <li>Note that the other features of the plugin (button checkboxes, button radios, single-toggle buttons) have been retained in v4.</li>
     </ul>
@@ -1144,7 +1143,7 @@
 <ul>
   <li>Renamed <code class="highlighter-rouge">.btn-default</code> to <code class="highlighter-rouge">.btn-secondary</code>.</li>
   <li>Dropped the <code class="highlighter-rouge">.btn-xs</code> class entirely as <code class="highlighter-rouge">.btn-sm</code> is proportionally much smaller than v3’s.</li>
-  <li>The <a href="/docs/3.3/javascript/#buttons-stateful">stateful button</a> feature of the <code class="highlighter-rouge">button.js</code> jQuery plugin has been dropped. This includes the <code class="highlighter-rouge">$().button(string)</code> and <code class="highlighter-rouge">$().button('reset')</code> methods. We advise using a tiny bit of custom JavaScript instead, which will have the benefit of behaving exactly the way you want it to.
+  <li>The <a href="http://localhost:4000/docs/3.3/javascript/#buttons-stateful">stateful button</a> feature of the <code class="highlighter-rouge">button.js</code> jQuery plugin has been dropped. This includes the <code class="highlighter-rouge">$().button(string)</code> and <code class="highlighter-rouge">$().button('reset')</code> methods. We advise using a tiny bit of custom JavaScript instead, which will have the benefit of behaving exactly the way you want it to.
     <ul>
       <li>Note that the other features of the plugin (button checkboxes, button radios, single-toggle buttons) have been retained in v4.</li>
     </ul>
@@ -1372,6 +1371,11 @@
     </div>
 
     <script src="" integrity="" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="/docs//assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs//dist/js/bootstrap.bundle.min.js" integrity="" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/docs//assets/js/docs.min.js"></script>
+<script>window.jQuery || document.write('<script src="/docs//assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs//dist/js/bootstrap.bundle.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/docs//assets/js/vendor/anchor.min.js"></script>
+  <script src="/docs//assets/js/vendor/clipboard.min.js"></script>
+  <script src="/docs//assets/js/vendor/bs-custom-file-input.min.js"></script>
+  <script src="/docs//assets/js/src/application.js"></script>
+  <script src="/docs//assets/js/src/search.js"></script>
+  <script src="/docs//assets/js/src/ie-emulation-modes-warning.js"></script>
   </body>
 </html>
