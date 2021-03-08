@@ -5,17 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Documentation and examples for Bootstrap’s media object to construct highly repetitive components like blog comments, tweets, and the like.">
 <meta name="author" content="">
-<meta name="generator" content="Jekyll v3.8.3">
+<meta name="generator" content="Jekyll v4.2.0">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="">
 
 <title>Media object · </title>
 
-<link rel="canonical" href="http://localhost:4000/docs/4.3/components/media-object.html">
+<link rel="canonical" href="/docs/4.3/components/media-object.html">
 
 <!-- Bootstrap core CSS -->
-<link href="/docs//dist/css/bootstrap.css" rel="stylesheet">
+<!-- <link href="/docs//dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- Documentation extras -->
 
 <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
@@ -39,15 +40,15 @@
 <meta name="twitter:creator" content="@">
 <meta name="twitter:title" content="Media object">
 <meta name="twitter:description" content="Documentation and examples for Bootstrap’s media object to construct highly repetitive components like blog comments, tweets, and the like.">
-<meta name="twitter:image" content="http://localhost:4000">
+<meta name="twitter:image" content="">
 
 <!-- Facebook -->
-<meta property="og:url" content="http://localhost:4000/docs/4.3/components/media-object.html">
+<meta property="og:url" content="/docs/4.3/components/media-object.html">
 <meta property="og:title" content="Media object">
 <meta property="og:description" content="Documentation and examples for Bootstrap’s media object to construct highly repetitive components like blog comments, tweets, and the like.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="http://localhost:4000">
-<meta property="og:image:secure_url" content="http://localhost:4000">
+<meta property="og:image" content="">
+<meta property="og:image:secure_url" content="">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -468,7 +469,7 @@
 
 <p>The <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a> helps build complex and repetitive components where some media is positioned alongside content that doesn’t wrap around said media. Plus, it does this with only two required classes thanks to flexbox.</p>
 
-<p>Below is an example of a single media object. Only two classes are required—the wrapping <code class="highlighter-rouge">.media</code> and the <code class="highlighter-rouge">.media-body</code> around your content. Optional padding and margin can be controlled through <a href="/docs//utilities/spacing/">spacing utilities</a>.</p>
+<p>Below is an example of a single media object. Only two classes are required—the wrapping <code class="language-plaintext highlighter-rouge">.media</code> and the <code class="language-plaintext highlighter-rouge">.media-body</code> around your content. Optional padding and margin can be controlled through <a href="/docs//utilities/spacing/">spacing utilities</a>.</p>
 
 <div class="bd-example">
 <div class="media">
@@ -490,14 +491,14 @@
 <div class="bd-callout bd-callout-warning">
 <h5 id="flexbug-12-inline-elements-arent-treated-as-flex-items">Flexbug #12: Inline elements aren’t treated as flex items</h5>
 
-<p>Internet Explorer 10-11 do not render inline elements like links or images (or <code class="highlighter-rouge">::before</code> and <code class="highlighter-rouge">::after</code> pseudo-elements) as flex items. The only workaround is to set a non-inline <code class="highlighter-rouge">display</code> value (e.g., <code class="highlighter-rouge">block</code>, <code class="highlighter-rouge">inline-block</code>, or <code class="highlighter-rouge">flex</code>). We suggest using <code class="highlighter-rouge">.d-flex</code>, one of our <a href="/docs//utilities/display/">display utilities</a>, as an easy fix.</p>
+<p>Internet Explorer 10-11 do not render inline elements like links or images (or <code class="language-plaintext highlighter-rouge">::before</code> and <code class="language-plaintext highlighter-rouge">::after</code> pseudo-elements) as flex items. The only workaround is to set a non-inline <code class="language-plaintext highlighter-rouge">display</code> value (e.g., <code class="language-plaintext highlighter-rouge">block</code>, <code class="language-plaintext highlighter-rouge">inline-block</code>, or <code class="language-plaintext highlighter-rouge">flex</code>). We suggest using <code class="language-plaintext highlighter-rouge">.d-flex</code>, one of our <a href="/docs//utilities/display/">display utilities</a>, as an easy fix.</p>
 
 <p><strong>Source:</strong> <a href="https://github.com/philipwalton/flexbugs#flexbug-12">Flexbugs on GitHub</a></p>
 </div>
 
 <h2 id="nesting">Nesting</h2>
 
-<p>Media objects can be infinitely nested, though we suggest you stop at some point. Place nested <code class="highlighter-rouge">.media</code> within the <code class="highlighter-rouge">.media-body</code> of a parent media object.</p>
+<p>Media objects can be infinitely nested, though we suggest you stop at some point. Place nested <code class="language-plaintext highlighter-rouge">.media</code> within the <code class="language-plaintext highlighter-rouge">.media-body</code> of a parent media object.</p>
 
 <div class="bd-example">
 <div class="media">
@@ -538,7 +539,7 @@
 
 <h2 id="alignment">Alignment</h2>
 
-<p>Media in a media object can be aligned with flexbox utilities to the top (default), middle, or end of your <code class="highlighter-rouge">.media-body</code> content.</p>
+<p>Media in a media object can be aligned with flexbox utilities to the top (default), middle, or end of your <code class="language-plaintext highlighter-rouge">.media-body</code> content.</p>
 
 <div class="bd-example">
 <div class="media">
@@ -599,7 +600,7 @@
 
 <h2 id="order">Order</h2>
 
-<p>Change the order of content in media objects by modifying the HTML itself, or by adding some custom flexbox CSS to set the <code class="highlighter-rouge">order</code> property (to an integer of your choosing).</p>
+<p>Change the order of content in media objects by modifying the HTML itself, or by adding some custom flexbox CSS to set the <code class="language-plaintext highlighter-rouge">order</code> property (to an integer of your choosing).</p>
 
 <div class="bd-example">
 <div class="media">
@@ -620,7 +621,7 @@
 
 <h2 id="media-list">Media list</h2>
 
-<p>Because the media object has so few structural requirements, you can also use these classes on list HTML elements. On your <code class="highlighter-rouge">&lt;ul&gt;</code> or <code class="highlighter-rouge">&lt;ol&gt;</code>, add the <code class="highlighter-rouge">.list-unstyled</code> to remove any browser default list styles, and then apply <code class="highlighter-rouge">.media</code> to your <code class="highlighter-rouge">&lt;li&gt;</code>s. As always, use spacing utilities wherever needed to fine tune.</p>
+<p>Because the media object has so few structural requirements, you can also use these classes on list HTML elements. On your <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code>, add the <code class="language-plaintext highlighter-rouge">.list-unstyled</code> to remove any browser default list styles, and then apply <code class="language-plaintext highlighter-rouge">.media</code> to your <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>s. As always, use spacing utilities wherever needed to fine tune.</p>
 
 <div class="bd-example">
 <ul class="list-unstyled">
@@ -684,7 +685,7 @@
 
 <p>The <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media object</a> helps build complex and repetitive components where some media is positioned alongside content that doesn’t wrap around said media. Plus, it does this with only two required classes thanks to flexbox.</p>
 
-<p>Below is an example of a single media object. Only two classes are required—the wrapping <code class="highlighter-rouge">.media</code> and the <code class="highlighter-rouge">.media-body</code> around your content. Optional padding and margin can be controlled through <a href="/docs//utilities/spacing/">spacing utilities</a>.</p>
+<p>Below is an example of a single media object. Only two classes are required—the wrapping <code class="language-plaintext highlighter-rouge">.media</code> and the <code class="language-plaintext highlighter-rouge">.media-body</code> around your content. Optional padding and margin can be controlled through <a href="/docs//utilities/spacing/">spacing utilities</a>.</p>
 
 <div class="bd-example">
 <div class="media">
@@ -706,14 +707,14 @@
 <div class="bd-callout bd-callout-warning">
 <h5 id="flexbug-12-inline-elements-arent-treated-as-flex-items">Flexbug #12: Inline elements aren’t treated as flex items</h5>
 
-<p>Internet Explorer 10-11 do not render inline elements like links or images (or <code class="highlighter-rouge">::before</code> and <code class="highlighter-rouge">::after</code> pseudo-elements) as flex items. The only workaround is to set a non-inline <code class="highlighter-rouge">display</code> value (e.g., <code class="highlighter-rouge">block</code>, <code class="highlighter-rouge">inline-block</code>, or <code class="highlighter-rouge">flex</code>). We suggest using <code class="highlighter-rouge">.d-flex</code>, one of our <a href="/docs//utilities/display/">display utilities</a>, as an easy fix.</p>
+<p>Internet Explorer 10-11 do not render inline elements like links or images (or <code class="language-plaintext highlighter-rouge">::before</code> and <code class="language-plaintext highlighter-rouge">::after</code> pseudo-elements) as flex items. The only workaround is to set a non-inline <code class="language-plaintext highlighter-rouge">display</code> value (e.g., <code class="language-plaintext highlighter-rouge">block</code>, <code class="language-plaintext highlighter-rouge">inline-block</code>, or <code class="language-plaintext highlighter-rouge">flex</code>). We suggest using <code class="language-plaintext highlighter-rouge">.d-flex</code>, one of our <a href="/docs//utilities/display/">display utilities</a>, as an easy fix.</p>
 
 <p><strong>Source:</strong> <a href="https://github.com/philipwalton/flexbugs#flexbug-12">Flexbugs on GitHub</a></p>
 </div>
 
 <h2 id="nesting">Nesting</h2>
 
-<p>Media objects can be infinitely nested, though we suggest you stop at some point. Place nested <code class="highlighter-rouge">.media</code> within the <code class="highlighter-rouge">.media-body</code> of a parent media object.</p>
+<p>Media objects can be infinitely nested, though we suggest you stop at some point. Place nested <code class="language-plaintext highlighter-rouge">.media</code> within the <code class="language-plaintext highlighter-rouge">.media-body</code> of a parent media object.</p>
 
 <div class="bd-example">
 <div class="media">
@@ -754,7 +755,7 @@
 
 <h2 id="alignment">Alignment</h2>
 
-<p>Media in a media object can be aligned with flexbox utilities to the top (default), middle, or end of your <code class="highlighter-rouge">.media-body</code> content.</p>
+<p>Media in a media object can be aligned with flexbox utilities to the top (default), middle, or end of your <code class="language-plaintext highlighter-rouge">.media-body</code> content.</p>
 
 <div class="bd-example">
 <div class="media">
@@ -815,7 +816,7 @@
 
 <h2 id="order">Order</h2>
 
-<p>Change the order of content in media objects by modifying the HTML itself, or by adding some custom flexbox CSS to set the <code class="highlighter-rouge">order</code> property (to an integer of your choosing).</p>
+<p>Change the order of content in media objects by modifying the HTML itself, or by adding some custom flexbox CSS to set the <code class="language-plaintext highlighter-rouge">order</code> property (to an integer of your choosing).</p>
 
 <div class="bd-example">
 <div class="media">
@@ -836,7 +837,7 @@
 
 <h2 id="media-list">Media list</h2>
 
-<p>Because the media object has so few structural requirements, you can also use these classes on list HTML elements. On your <code class="highlighter-rouge">&lt;ul&gt;</code> or <code class="highlighter-rouge">&lt;ol&gt;</code>, add the <code class="highlighter-rouge">.list-unstyled</code> to remove any browser default list styles, and then apply <code class="highlighter-rouge">.media</code> to your <code class="highlighter-rouge">&lt;li&gt;</code>s. As always, use spacing utilities wherever needed to fine tune.</p>
+<p>Because the media object has so few structural requirements, you can also use these classes on list HTML elements. On your <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code>, add the <code class="language-plaintext highlighter-rouge">.list-unstyled</code> to remove any browser default list styles, and then apply <code class="language-plaintext highlighter-rouge">.media</code> to your <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>s. As always, use spacing utilities wherever needed to fine tune.</p>
 
 <div class="bd-example">
 <ul class="list-unstyled">
@@ -893,11 +894,6 @@
     </div>
 
     <script src="" integrity="" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="/docs//assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs//dist/js/bootstrap.bundle.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/docs//assets/js/vendor/anchor.min.js"></script>
-  <script src="/docs//assets/js/vendor/clipboard.min.js"></script>
-  <script src="/docs//assets/js/vendor/bs-custom-file-input.min.js"></script>
-  <script src="/docs//assets/js/src/application.js"></script>
-  <script src="/docs//assets/js/src/search.js"></script>
-  <script src="/docs//assets/js/src/ie-emulation-modes-warning.js"></script>
+<script>window.jQuery || document.write('<script src="/docs//assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs//dist/js/bootstrap.bundle.min.js" integrity="" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/docs//assets/js/docs.min.js"></script>
   </body>
 </html>

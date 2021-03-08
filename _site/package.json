@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "JEKYLL_ENV=production jekyll build"
+    "compile": "JEKYLL_ENV=production jekyll build",
+    "start": "JEKYLL_ENV=production jekyll build"
   },
   "keywords": [],
   "author": "alfonsodev <fernandez.alfonso@gmail.com>",

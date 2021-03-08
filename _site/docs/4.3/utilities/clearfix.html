@@ -5,17 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Quickly and easily clear floated content within a container by adding a clearfix utility.">
 <meta name="author" content="">
-<meta name="generator" content="Jekyll v3.8.3">
+<meta name="generator" content="Jekyll v4.2.0">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="">
 
 <title>Clearfix · </title>
 
-<link rel="canonical" href="http://localhost:4000/docs/4.3/utilities/clearfix.html">
+<link rel="canonical" href="/docs/4.3/utilities/clearfix.html">
 
 <!-- Bootstrap core CSS -->
-<link href="/docs//dist/css/bootstrap.css" rel="stylesheet">
+<!-- <link href="/docs//dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- Documentation extras -->
 
 <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
@@ -39,15 +40,15 @@
 <meta name="twitter:creator" content="@">
 <meta name="twitter:title" content="Clearfix">
 <meta name="twitter:description" content="Quickly and easily clear floated content within a container by adding a clearfix utility.">
-<meta name="twitter:image" content="http://localhost:4000">
+<meta name="twitter:image" content="">
 
 <!-- Facebook -->
-<meta property="og:url" content="http://localhost:4000/docs/4.3/utilities/clearfix.html">
+<meta property="og:url" content="/docs/4.3/utilities/clearfix.html">
 <meta property="og:title" content="Clearfix">
 <meta property="og:description" content="Quickly and easily clear floated content within a container by adding a clearfix utility.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="http://localhost:4000">
-<meta property="og:image:secure_url" content="http://localhost:4000">
+<meta property="og:image" content="">
+<meta property="og:image:secure_url" content="">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -469,13 +470,13 @@
           <p class="bd-lead">Quickly and easily clear floated content within a container by adding a clearfix utility.</p>
           <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
 
-          <p>Easily clear <code class="highlighter-rouge">float</code>s by adding <code class="highlighter-rouge">.clearfix</code> <strong>to the parent element</strong>. Can also be used as a mixin.</p>
+          <p>Easily clear <code class="language-plaintext highlighter-rouge">float</code>s by adding <code class="language-plaintext highlighter-rouge">.clearfix</code> <strong>to the parent element</strong>. Can also be used as a mixin.</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Mixin itself</span>
 <span class="k">@mixin</span> <span class="nf">clearfix</span><span class="p">()</span> <span class="p">{</span>
-  <span class="err">&amp;</span><span class="p">:</span><span class="o">:</span><span class="n">after</span> <span class="p">{</span>
+  <span class="k">&amp;</span><span class="nd">::after</span> <span class="p">{</span>
     <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
     <span class="nl">content</span><span class="p">:</span> <span class="s2">""</span><span class="p">;</span>
     <span class="nl">clear</span><span class="p">:</span> <span class="nb">both</span><span class="p">;</span>
@@ -506,11 +507,6 @@
     </div>
 
     <script src="" integrity="" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="/docs//assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs//dist/js/bootstrap.bundle.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/docs//assets/js/vendor/anchor.min.js"></script>
-  <script src="/docs//assets/js/vendor/clipboard.min.js"></script>
-  <script src="/docs//assets/js/vendor/bs-custom-file-input.min.js"></script>
-  <script src="/docs//assets/js/src/application.js"></script>
-  <script src="/docs//assets/js/src/search.js"></script>
-  <script src="/docs//assets/js/src/ie-emulation-modes-warning.js"></script>
+<script>window.jQuery || document.write('<script src="/docs//assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs//dist/js/bootstrap.bundle.min.js" integrity="" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/docs//assets/js/docs.min.js"></script>
   </body>
 </html>

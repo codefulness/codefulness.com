@@ -5,17 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Components and options for laying out your Bootstrap project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.">
 <meta name="author" content="">
-<meta name="generator" content="Jekyll v3.8.3">
+<meta name="generator" content="Jekyll v4.2.0">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="">
 
 <title>Overview · </title>
 
-<link rel="canonical" href="http://localhost:4000/docs/4.3/layout/overview.html">
+<link rel="canonical" href="/docs/4.3/layout/overview.html">
 
 <!-- Bootstrap core CSS -->
-<link href="/docs//dist/css/bootstrap.css" rel="stylesheet">
+<!-- <link href="/docs//dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- Documentation extras -->
 
 <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
@@ -39,15 +40,15 @@
 <meta name="twitter:creator" content="@">
 <meta name="twitter:title" content="Overview">
 <meta name="twitter:description" content="Components and options for laying out your Bootstrap project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.">
-<meta name="twitter:image" content="http://localhost:4000">
+<meta name="twitter:image" content="">
 
 <!-- Facebook -->
-<meta property="og:url" content="http://localhost:4000/docs/4.3/layout/overview.html">
+<meta property="og:url" content="/docs/4.3/layout/overview.html">
 <meta property="og:title" content="Overview">
 <meta property="og:description" content="Components and options for laying out your Bootstrap project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="http://localhost:4000">
-<meta property="og:image:secure_url" content="http://localhost:4000">
+<meta property="og:image" content="">
+<meta property="og:image:secure_url" content="">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -466,7 +467,7 @@
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <h2 id="containers">Containers</h2>
 
-<p>Containers are the most basic layout element in Bootstrap and are <strong>required when using our default grid system</strong>. Choose from a responsive, fixed-width container (meaning its <code class="highlighter-rouge">max-width</code> changes at each breakpoint) or fluid-width (meaning it’s <code class="highlighter-rouge">100%</code> wide all the time).</p>
+<p>Containers are the most basic layout element in Bootstrap and are <strong>required when using our default grid system</strong>. Choose from a responsive, fixed-width container (meaning its <code class="language-plaintext highlighter-rouge">max-width</code> changes at each breakpoint) or fluid-width (meaning it’s <code class="language-plaintext highlighter-rouge">100%</code> wide all the time).</p>
 
 <p>While containers <em>can</em> be nested, most layouts do not require a nested container.</p>
 
@@ -482,7 +483,7 @@
   <span class="c">&lt;!-- Content here --&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Use <code class="highlighter-rouge">.container-fluid</code> for a full width container, spanning the entire width of the viewport.</p>
+<p>Use <code class="language-plaintext highlighter-rouge">.container-fluid</code> for a full width container, spanning the entire width of the viewport.</p>
 
 <div class="bd-example">
   <div class="bd-example-container bd-example-container-fluid">
@@ -553,7 +554,7 @@
 <span class="c1">// No media query since the extra-large breakpoint has no upper bound on its width</span></code></pre></figure>
 
 <div class="bd-callout bd-callout-info">
-<p>Note that since browsers do not currently support <a href="https://www.w3.org/TR/mediaqueries-4/#range-context">range context queries</a>, we work around the limitations of <a href="https://www.w3.org/TR/mediaqueries-4/#mq-min-max"><code class="highlighter-rouge">min-</code> and <code class="highlighter-rouge">max-</code> prefixes</a> and viewports with fractional widths (which can occur under certain conditions on high-dpi devices, for instance) by using values with higher precision for these comparisons.</p>
+<p>Note that since browsers do not currently support <a href="https://www.w3.org/TR/mediaqueries-4/#range-context">range context queries</a>, we work around the limitations of <a href="https://www.w3.org/TR/mediaqueries-4/#mq-min-max"><code class="language-plaintext highlighter-rouge">min-</code> and <code class="language-plaintext highlighter-rouge">max-</code> prefixes</a> and viewports with fractional widths (which can occur under certain conditions on high-dpi devices, for instance) by using values with higher precision for these comparisons.</p>
 </div>
 
 <p>Once again, these media queries are also available via Sass mixins:</p>
@@ -608,9 +609,9 @@
 
 <h2 id="z-index">Z-index</h2>
 
-<p>Several Bootstrap components utilize <code class="highlighter-rouge">z-index</code>, the CSS property that helps control layout by providing a third axis to arrange content. We utilize a default z-index scale in Bootstrap that’s been designed to properly layer navigation, tooltips and popovers, modals, and more.</p>
+<p>Several Bootstrap components utilize <code class="language-plaintext highlighter-rouge">z-index</code>, the CSS property that helps control layout by providing a third axis to arrange content. We utilize a default z-index scale in Bootstrap that’s been designed to properly layer navigation, tooltips and popovers, modals, and more.</p>
 
-<p>These higher values start at an arbitrary number, high and specific enough to ideally avoid conflicts. We need a standard set of these across our layered components—tooltips, popovers, navbars, dropdowns, modals—so we can be reasonably consistent in the behaviors. There’s no reason we couldn’t have used <code class="highlighter-rouge">100</code>+ or <code class="highlighter-rouge">500</code>+.</p>
+<p>These higher values start at an arbitrary number, high and specific enough to ideally avoid conflicts. We need a standard set of these across our layered components—tooltips, popovers, navbars, dropdowns, modals—so we can be reasonably consistent in the behaviors. There’s no reason we couldn’t have used <code class="language-plaintext highlighter-rouge">100</code>+ or <code class="language-plaintext highlighter-rouge">500</code>+.</p>
 
 <p>We don’t encourage customization of these individual values; should you change one, you likely need to change them all.</p>
 
@@ -622,7 +623,7 @@
 <span class="nv">$zindex-popover</span><span class="p">:</span>           <span class="m">1060</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
 <span class="nv">$zindex-tooltip</span><span class="p">:</span>           <span class="m">1070</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span></code></pre></figure>
 
-<p>To handle overlapping borders within components (e.g., buttons and inputs in input groups), we use low single digit <code class="highlighter-rouge">z-index</code> values of <code class="highlighter-rouge">1</code>, <code class="highlighter-rouge">2</code>, and <code class="highlighter-rouge">3</code> for default, hover, and active states. On hover/focus/active, we bring a particular element to the forefront with a higher <code class="highlighter-rouge">z-index</code> value to show their border over the sibling elements.</p>
+<p>To handle overlapping borders within components (e.g., buttons and inputs in input groups), we use low single digit <code class="language-plaintext highlighter-rouge">z-index</code> values of <code class="language-plaintext highlighter-rouge">1</code>, <code class="language-plaintext highlighter-rouge">2</code>, and <code class="language-plaintext highlighter-rouge">3</code> for default, hover, and active states. On hover/focus/active, we bring a particular element to the forefront with a higher <code class="language-plaintext highlighter-rouge">z-index</code> value to show their border over the sibling elements.</p>
 
           </div>
         
@@ -634,7 +635,7 @@
 
           <h2 id="containers">Containers</h2>
 
-<p>Containers are the most basic layout element in Bootstrap and are <strong>required when using our default grid system</strong>. Choose from a responsive, fixed-width container (meaning its <code class="highlighter-rouge">max-width</code> changes at each breakpoint) or fluid-width (meaning it’s <code class="highlighter-rouge">100%</code> wide all the time).</p>
+<p>Containers are the most basic layout element in Bootstrap and are <strong>required when using our default grid system</strong>. Choose from a responsive, fixed-width container (meaning its <code class="language-plaintext highlighter-rouge">max-width</code> changes at each breakpoint) or fluid-width (meaning it’s <code class="language-plaintext highlighter-rouge">100%</code> wide all the time).</p>
 
 <p>While containers <em>can</em> be nested, most layouts do not require a nested container.</p>
 
@@ -650,7 +651,7 @@
   <span class="c">&lt;!-- Content here --&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Use <code class="highlighter-rouge">.container-fluid</code> for a full width container, spanning the entire width of the viewport.</p>
+<p>Use <code class="language-plaintext highlighter-rouge">.container-fluid</code> for a full width container, spanning the entire width of the viewport.</p>
 
 <div class="bd-example">
   <div class="bd-example-container bd-example-container-fluid">
@@ -721,7 +722,7 @@
 <span class="c1">// No media query since the extra-large breakpoint has no upper bound on its width</span></code></pre></figure>
 
 <div class="bd-callout bd-callout-info">
-<p>Note that since browsers do not currently support <a href="https://www.w3.org/TR/mediaqueries-4/#range-context">range context queries</a>, we work around the limitations of <a href="https://www.w3.org/TR/mediaqueries-4/#mq-min-max"><code class="highlighter-rouge">min-</code> and <code class="highlighter-rouge">max-</code> prefixes</a> and viewports with fractional widths (which can occur under certain conditions on high-dpi devices, for instance) by using values with higher precision for these comparisons.</p>
+<p>Note that since browsers do not currently support <a href="https://www.w3.org/TR/mediaqueries-4/#range-context">range context queries</a>, we work around the limitations of <a href="https://www.w3.org/TR/mediaqueries-4/#mq-min-max"><code class="language-plaintext highlighter-rouge">min-</code> and <code class="language-plaintext highlighter-rouge">max-</code> prefixes</a> and viewports with fractional widths (which can occur under certain conditions on high-dpi devices, for instance) by using values with higher precision for these comparisons.</p>
 </div>
 
 <p>Once again, these media queries are also available via Sass mixins:</p>
@@ -776,9 +777,9 @@
 
 <h2 id="z-index">Z-index</h2>
 
-<p>Several Bootstrap components utilize <code class="highlighter-rouge">z-index</code>, the CSS property that helps control layout by providing a third axis to arrange content. We utilize a default z-index scale in Bootstrap that’s been designed to properly layer navigation, tooltips and popovers, modals, and more.</p>
+<p>Several Bootstrap components utilize <code class="language-plaintext highlighter-rouge">z-index</code>, the CSS property that helps control layout by providing a third axis to arrange content. We utilize a default z-index scale in Bootstrap that’s been designed to properly layer navigation, tooltips and popovers, modals, and more.</p>
 
-<p>These higher values start at an arbitrary number, high and specific enough to ideally avoid conflicts. We need a standard set of these across our layered components—tooltips, popovers, navbars, dropdowns, modals—so we can be reasonably consistent in the behaviors. There’s no reason we couldn’t have used <code class="highlighter-rouge">100</code>+ or <code class="highlighter-rouge">500</code>+.</p>
+<p>These higher values start at an arbitrary number, high and specific enough to ideally avoid conflicts. We need a standard set of these across our layered components—tooltips, popovers, navbars, dropdowns, modals—so we can be reasonably consistent in the behaviors. There’s no reason we couldn’t have used <code class="language-plaintext highlighter-rouge">100</code>+ or <code class="language-plaintext highlighter-rouge">500</code>+.</p>
 
 <p>We don’t encourage customization of these individual values; should you change one, you likely need to change them all.</p>
 
@@ -790,18 +791,13 @@
 <span class="nv">$zindex-popover</span><span class="p">:</span>           <span class="m">1060</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
 <span class="nv">$zindex-tooltip</span><span class="p">:</span>           <span class="m">1070</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span></code></pre></figure>
 
-<p>To handle overlapping borders within components (e.g., buttons and inputs in input groups), we use low single digit <code class="highlighter-rouge">z-index</code> values of <code class="highlighter-rouge">1</code>, <code class="highlighter-rouge">2</code>, and <code class="highlighter-rouge">3</code> for default, hover, and active states. On hover/focus/active, we bring a particular element to the forefront with a higher <code class="highlighter-rouge">z-index</code> value to show their border over the sibling elements.</p>
+<p>To handle overlapping borders within components (e.g., buttons and inputs in input groups), we use low single digit <code class="language-plaintext highlighter-rouge">z-index</code> values of <code class="language-plaintext highlighter-rouge">1</code>, <code class="language-plaintext highlighter-rouge">2</code>, and <code class="language-plaintext highlighter-rouge">3</code> for default, hover, and active states. On hover/focus/active, we bring a particular element to the forefront with a higher <code class="language-plaintext highlighter-rouge">z-index</code> value to show their border over the sibling elements.</p>
 
         </main>
       </div>
     </div>
 
     <script src="" integrity="" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="/docs//assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs//dist/js/bootstrap.bundle.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/docs//assets/js/vendor/anchor.min.js"></script>
-  <script src="/docs//assets/js/vendor/clipboard.min.js"></script>
-  <script src="/docs//assets/js/vendor/bs-custom-file-input.min.js"></script>
-  <script src="/docs//assets/js/src/application.js"></script>
-  <script src="/docs//assets/js/src/search.js"></script>
-  <script src="/docs//assets/js/src/ie-emulation-modes-warning.js"></script>
+<script>window.jQuery || document.write('<script src="/docs//assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs//dist/js/bootstrap.bundle.min.js" integrity="" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/docs//assets/js/docs.min.js"></script>
   </body>
 </html>

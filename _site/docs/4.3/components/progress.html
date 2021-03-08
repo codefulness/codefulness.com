@@ -5,17 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Documentation and examples for using Bootstrap custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.">
 <meta name="author" content="">
-<meta name="generator" content="Jekyll v3.8.3">
+<meta name="generator" content="Jekyll v4.2.0">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="">
 
 <title>Progress · </title>
 
-<link rel="canonical" href="http://localhost:4000/docs/4.3/components/progress.html">
+<link rel="canonical" href="/docs/4.3/components/progress.html">
 
 <!-- Bootstrap core CSS -->
-<link href="/docs//dist/css/bootstrap.css" rel="stylesheet">
+<!-- <link href="/docs//dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- Documentation extras -->
 
 <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
@@ -39,15 +40,15 @@
 <meta name="twitter:creator" content="@">
 <meta name="twitter:title" content="Progress">
 <meta name="twitter:description" content="Documentation and examples for using Bootstrap custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.">
-<meta name="twitter:image" content="http://localhost:4000">
+<meta name="twitter:image" content="">
 
 <!-- Facebook -->
-<meta property="og:url" content="http://localhost:4000/docs/4.3/components/progress.html">
+<meta property="og:url" content="/docs/4.3/components/progress.html">
 <meta property="og:title" content="Progress">
 <meta property="og:description" content="Documentation and examples for using Bootstrap custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="http://localhost:4000">
-<meta property="og:image:secure_url" content="http://localhost:4000">
+<meta property="og:image" content="">
+<meta property="og:image:secure_url" content="">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -466,13 +467,13 @@
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <h2 id="how-it-works">How it works</h2>
 
-<p>Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We don’t use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">the HTML5 <code class="highlighter-rouge">&lt;progress&gt;</code> element</a>, ensuring you can stack progress bars, animate them, and place text labels over them.</p>
+<p>Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We don’t use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">the HTML5 <code class="language-plaintext highlighter-rouge">&lt;progress&gt;</code> element</a>, ensuring you can stack progress bars, animate them, and place text labels over them.</p>
 
 <ul>
-  <li>We use the <code class="highlighter-rouge">.progress</code> as a wrapper to indicate the max value of the progress bar.</li>
-  <li>We use the inner <code class="highlighter-rouge">.progress-bar</code> to indicate the progress so far.</li>
-  <li>The <code class="highlighter-rouge">.progress-bar</code> requires an inline style, utility class, or custom CSS to set their width.</li>
-  <li>The <code class="highlighter-rouge">.progress-bar</code> also requires some <code class="highlighter-rouge">role</code> and <code class="highlighter-rouge">aria</code> attributes to make it accessible.</li>
+  <li>We use the <code class="language-plaintext highlighter-rouge">.progress</code> as a wrapper to indicate the max value of the progress bar.</li>
+  <li>We use the inner <code class="language-plaintext highlighter-rouge">.progress-bar</code> to indicate the progress so far.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">.progress-bar</code> requires an inline style, utility class, or custom CSS to set their width.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">.progress-bar</code> also requires some <code class="language-plaintext highlighter-rouge">role</code> and <code class="language-plaintext highlighter-rouge">aria</code> attributes to make it accessible.</li>
 </ul>
 
 <p>Put that all together, and you have the following examples.</p>
@@ -523,7 +524,7 @@
 
 <h2 id="labels">Labels</h2>
 
-<p>Add labels to your progress bars by placing text within the <code class="highlighter-rouge">.progress-bar</code>.</p>
+<p>Add labels to your progress bars by placing text within the <code class="language-plaintext highlighter-rouge">.progress-bar</code>.</p>
 
 <div class="bd-example">
 <div class="progress">
@@ -536,7 +537,7 @@
 
 <h2 id="height">Height</h2>
 
-<p>We only set a <code class="highlighter-rouge">height</code> value on the <code class="highlighter-rouge">.progress</code>, so if you change that value the inner <code class="highlighter-rouge">.progress-bar</code> will automatically resize accordingly.</p>
+<p>We only set a <code class="language-plaintext highlighter-rouge">height</code> value on the <code class="language-plaintext highlighter-rouge">.progress</code>, so if you change that value the inner <code class="language-plaintext highlighter-rouge">.progress-bar</code> will automatically resize accordingly.</p>
 
 <div class="bd-example">
 <div class="progress" style="height: 1px;">
@@ -603,7 +604,7 @@
 
 <h2 id="striped">Striped</h2>
 
-<p>Add <code class="highlighter-rouge">.progress-bar-striped</code> to any <code class="highlighter-rouge">.progress-bar</code> to apply a stripe via CSS gradient over the progress bar’s background color.</p>
+<p>Add <code class="language-plaintext highlighter-rouge">.progress-bar-striped</code> to any <code class="language-plaintext highlighter-rouge">.progress-bar</code> to apply a stripe via CSS gradient over the progress bar’s background color.</p>
 
 <div class="bd-example">
 <div class="progress">
@@ -640,7 +641,7 @@
 
 <h2 id="animated-stripes">Animated stripes</h2>
 
-<p>The striped gradient can also be animated. Add <code class="highlighter-rouge">.progress-bar-animated</code> to <code class="highlighter-rouge">.progress-bar</code> to animate the stripes right to left via CSS3 animations.</p>
+<p>The striped gradient can also be animated. Add <code class="language-plaintext highlighter-rouge">.progress-bar-animated</code> to <code class="language-plaintext highlighter-rouge">.progress-bar</code> to animate the stripes right to left via CSS3 animations.</p>
 
 <div class="bd-example">
   <div class="progress">
@@ -666,13 +667,13 @@
 
           <h2 id="how-it-works">How it works</h2>
 
-<p>Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We don’t use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">the HTML5 <code class="highlighter-rouge">&lt;progress&gt;</code> element</a>, ensuring you can stack progress bars, animate them, and place text labels over them.</p>
+<p>Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We don’t use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">the HTML5 <code class="language-plaintext highlighter-rouge">&lt;progress&gt;</code> element</a>, ensuring you can stack progress bars, animate them, and place text labels over them.</p>
 
 <ul>
-  <li>We use the <code class="highlighter-rouge">.progress</code> as a wrapper to indicate the max value of the progress bar.</li>
-  <li>We use the inner <code class="highlighter-rouge">.progress-bar</code> to indicate the progress so far.</li>
-  <li>The <code class="highlighter-rouge">.progress-bar</code> requires an inline style, utility class, or custom CSS to set their width.</li>
-  <li>The <code class="highlighter-rouge">.progress-bar</code> also requires some <code class="highlighter-rouge">role</code> and <code class="highlighter-rouge">aria</code> attributes to make it accessible.</li>
+  <li>We use the <code class="language-plaintext highlighter-rouge">.progress</code> as a wrapper to indicate the max value of the progress bar.</li>
+  <li>We use the inner <code class="language-plaintext highlighter-rouge">.progress-bar</code> to indicate the progress so far.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">.progress-bar</code> requires an inline style, utility class, or custom CSS to set their width.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">.progress-bar</code> also requires some <code class="language-plaintext highlighter-rouge">role</code> and <code class="language-plaintext highlighter-rouge">aria</code> attributes to make it accessible.</li>
 </ul>
 
 <p>Put that all together, and you have the following examples.</p>
@@ -723,7 +724,7 @@
 
 <h2 id="labels">Labels</h2>
 
-<p>Add labels to your progress bars by placing text within the <code class="highlighter-rouge">.progress-bar</code>.</p>
+<p>Add labels to your progress bars by placing text within the <code class="language-plaintext highlighter-rouge">.progress-bar</code>.</p>
 
 <div class="bd-example">
 <div class="progress">
@@ -736,7 +737,7 @@
 
 <h2 id="height">Height</h2>
 
-<p>We only set a <code class="highlighter-rouge">height</code> value on the <code class="highlighter-rouge">.progress</code>, so if you change that value the inner <code class="highlighter-rouge">.progress-bar</code> will automatically resize accordingly.</p>
+<p>We only set a <code class="language-plaintext highlighter-rouge">height</code> value on the <code class="language-plaintext highlighter-rouge">.progress</code>, so if you change that value the inner <code class="language-plaintext highlighter-rouge">.progress-bar</code> will automatically resize accordingly.</p>
 
 <div class="bd-example">
 <div class="progress" style="height: 1px;">
@@ -803,7 +804,7 @@
 
 <h2 id="striped">Striped</h2>
 
-<p>Add <code class="highlighter-rouge">.progress-bar-striped</code> to any <code class="highlighter-rouge">.progress-bar</code> to apply a stripe via CSS gradient over the progress bar’s background color.</p>
+<p>Add <code class="language-plaintext highlighter-rouge">.progress-bar-striped</code> to any <code class="language-plaintext highlighter-rouge">.progress-bar</code> to apply a stripe via CSS gradient over the progress bar’s background color.</p>
 
 <div class="bd-example">
 <div class="progress">
@@ -840,7 +841,7 @@
 
 <h2 id="animated-stripes">Animated stripes</h2>
 
-<p>The striped gradient can also be animated. Add <code class="highlighter-rouge">.progress-bar-animated</code> to <code class="highlighter-rouge">.progress-bar</code> to animate the stripes right to left via CSS3 animations.</p>
+<p>The striped gradient can also be animated. Add <code class="language-plaintext highlighter-rouge">.progress-bar-animated</code> to <code class="language-plaintext highlighter-rouge">.progress-bar</code> to animate the stripes right to left via CSS3 animations.</p>
 
 <div class="bd-example">
   <div class="progress">
@@ -861,11 +862,6 @@
     </div>
 
     <script src="" integrity="" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="/docs//assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs//dist/js/bootstrap.bundle.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/docs//assets/js/vendor/anchor.min.js"></script>
-  <script src="/docs//assets/js/vendor/clipboard.min.js"></script>
-  <script src="/docs//assets/js/vendor/bs-custom-file-input.min.js"></script>
-  <script src="/docs//assets/js/src/application.js"></script>
-  <script src="/docs//assets/js/src/search.js"></script>
-  <script src="/docs//assets/js/src/ie-emulation-modes-warning.js"></script>
+<script>window.jQuery || document.write('<script src="/docs//assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs//dist/js/bootstrap.bundle.min.js" integrity="" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/docs//assets/js/docs.min.js"></script>
   </body>
 </html>
